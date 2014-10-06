@@ -1,7 +1,7 @@
 {
     "name": "Leaflet.Shim",
     "version": "0.0.1",
-    "description": "Greiner-Hormann clipping algorithm",
+    "description": "A shim layer to disable interactive vector features and markers without having to hide or update them. It basically propagates all the mouse events straight to the map, bypassing the layers",
     "main": "dist/greiner-hormann.js",
     "scripts": {
         "build": "./node_modules/uglify-js/bin/uglifyjs ./dist/Leaflet.Shim.js -m > ./dist/Leaflet.Shim.min.js",
