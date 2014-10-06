@@ -1,0 +1,30 @@
+{
+    "name": "Leaflet.Shim",
+    "version": "0.0.1",
+    "description": "Greiner-Hormann clipping algorithm",
+    "main": "dist/greiner-hormann.js",
+    "scripts": {
+        "build": "./node_modules/uglify-js/bin/uglifyjs ./dist/Leaflet.Shim.js -m > ./dist/Leaflet.Shim.min.js",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/w8r/Leaflet.Shim.git"
+    },
+    "keywords": [
+        "leaflet",
+        "map",
+        "vector",
+        "backdrop",
+        "shim"
+    ],
+    "author": "w8r",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/w8r/Leaflet.Shim/issues"
+    },
+    "homepage": "https://w8r.github.io/Leaflet.Shim/",
+    "devDependencies": {
+        "uglify-js": "^2.4.15"
+    }
+}
