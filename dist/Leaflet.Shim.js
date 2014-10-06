@@ -82,6 +82,7 @@ L.Shim = L.Class.extend( /** @lends {L.Shim.prototype}  */ {
             position = this._map.containerPointToLayerPoint(this._anchor),
             style = this._container.style;
 
+        style.cursor = this._map._container.style.cursor;
         style.width = size.x + 'px';
         style.height = size.y + 'px';
 
