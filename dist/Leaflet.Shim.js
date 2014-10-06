@@ -70,10 +70,6 @@ L.Shim = L.Class.extend( /** @lends {L.Shim.prototype}  */ {
      * @return {L.Shim}
      */
     removeFrom: function(map) {
-        if (this._container) {
-            this._container.parentNode.removeChild(this._container);
-            this._container = null;
-        }
         map.removeLayer(this);
         return this;
     },
@@ -98,6 +94,10 @@ L.Shim = L.Class.extend( /** @lends {L.Shim.prototype}  */ {
     onRemove: function(map) {
         L.DomEvent.off(this._container, L.Shim.EVENTS,
             this._propagateEvents, this);
+        if (this._container) {
+            this._container.parentNode.removeChild(this._container);
+            this._container = null;
+        }
         this._map.off('zoomend moveend', this._update, this);
     },
 
