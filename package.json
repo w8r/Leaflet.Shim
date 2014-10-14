@@ -4,7 +4,7 @@
     "description": "A shim layer to disable interactive vector features and markers without having to hide or update them. It basically propagates all the mouse events straight to the map, bypassing the layers",
     "main": "dist/greiner-hormann.js",
     "scripts": {
-        "build": "./node_modules/uglify-js/bin/uglifyjs ./dist/Leaflet.Shim.js -m > ./dist/Leaflet.Shim.min.js",
+        "build": "./node_modules/uglify-js/bin/uglifyjs ./dist/Leaflet.Shim.js -cm > ./dist/Leaflet.Shim.min.js",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "repository": {
